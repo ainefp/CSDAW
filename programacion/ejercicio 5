@@ -1,0 +1,12 @@
+cantidad = int(input("Introduzca la cantidad de bloques que tienen: "))
+construccion = 0
+altura = 0
+suma = 0
+while suma < cantidad:
+    construccion += 1
+    suma += construccion
+    if suma <= cantidad:
+        altura += 1
+    if suma >= cantidad:
+        break
+print("La altura de la pirámide es", altura, end=" ")
